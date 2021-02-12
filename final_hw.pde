@@ -61,11 +61,19 @@ void draw() {
     if (key == 't') {
       angle5 = angle5 - dif;
     }
-    if (key == '6') {
-      l1 = l1 + dif;
+    if (l1>10) {
+      l1=l1+0;
+    } else if (keyPressed) {
+      if (key == '6') {
+        l1 = l1 + dif;
+      }
     }
-    if (key == 'y') {
-      l1 = l1 - dif;
+    if (l1<-10) {
+      l1=l1-0;
+    } else if (keyPressed) {
+      if (key == 'y') {
+        l1 = l1 - dif;
+      }
     }
   }
 
